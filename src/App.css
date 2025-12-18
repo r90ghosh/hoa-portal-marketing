@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 6s ease infinite;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
