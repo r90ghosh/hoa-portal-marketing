@@ -19,9 +19,9 @@ import {
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // URLs for HOA Portal App - update these to your actual app URL
-  const loginUrl = "https://hoa-portal-app.netlify.app/login";
-  const getStartedUrl = "https://hoa-portal-app.netlify.app/get-started";
+  // URLs for HOA Portal App
+  const loginUrl = "https://app.hoaportal.io/login";
+  const getStartedUrl = "https://app.hoaportal.io/get-started";
 
   return (
     <>
