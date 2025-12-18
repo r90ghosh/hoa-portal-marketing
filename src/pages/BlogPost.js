@@ -28,12 +28,12 @@ function BlogPost() {
       <ReactMarkdown
         children={content}
         components={{
-          h1: ({ node, ...props }) => <h1 className="text-3xl font-bold mb-4" {...props} />,
-          h2: ({ node, ...props }) => <h2 className="text-2xl font-semibold mt-6 mb-3" {...props} />,
+          h1: ({ node, children, ...props }) => <h1 className="text-3xl font-bold mb-4" {...props}>{children}</h1>,
+          h2: ({ node, children, ...props }) => <h2 className="text-2xl font-semibold mt-6 mb-3" {...props}>{children}</h2>,
           p: ({ node, ...props }) => <p className="mb-4 text-gray-700 leading-relaxed" {...props} />,
           li: ({ node, ...props }) => <li className="ml-6 list-disc mb-2" {...props} />,
-          a: ({ node, ...props }) => (
-            <a {...props} className="text-indigo-600 underline hover:text-indigo-800" />
+          a: ({ node, children, ...props }) => (
+            <a {...props} className="text-indigo-600 underline hover:text-indigo-800">{children}</a>
           ),
         }}
       />
